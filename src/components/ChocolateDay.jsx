@@ -97,7 +97,7 @@ export default function ChocolateDay({ handleReveal }) {
   }
 
   return (
-    <div className="fixed inset-0 bg-gradient-to-br from-[#3b2417] via-[#5a3522] to-[#7a4a2e] overflow-hidden">
+    <div className="fixed inset-0 bg-gradient-to-br from-[#3b2417] via-[#5a3522] to-[#7a4a2e] overflow-y-auto">
       {mounted &&
         Array.from({ length: 15 }).map((_, i) => {
           const randomX = Math.random() * window.innerWidth;
@@ -291,8 +291,8 @@ export default function ChocolateDay({ handleReveal }) {
                   </p>
 
                   <p>
-                    If love had a flavor, it would definately taste like you, haha.. warm, rich,
-                    and impossible to get enough of.
+                    If love had a flavor, it would definately taste like you,
+                    haha.. warm, rich, and impossible to get enough of.
                   </p>
 
                   <p>
